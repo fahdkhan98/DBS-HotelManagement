@@ -35,6 +35,7 @@ $  flask run
 
 ```
 ### Step 2: Make Sure that you have a MySQL Server up and running either in your local computer or hosted remotely
+By default, a flask application runs on port `5000` on `localhost`. So head over to http://localhost:5000 and start using!
 
 # Screenshots
 
