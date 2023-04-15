@@ -1,2 +1,2 @@
 # DBS-HotelManagement
-DBS Assignment
+DBS - Hotelmanagement
