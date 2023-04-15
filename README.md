@@ -19,3 +19,10 @@ Jinja2 = 3.1.2
 MarkupSafe = 2.1.2
 mysqlclient = 2.1.1
 Werkzeug = 2.2.3
+
+# Features
+Room Booking
+Room services
+Guest check-in check-out
+
+
