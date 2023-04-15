@@ -23,6 +23,9 @@ Werkzeug = 2.2.3
 # Features
 Room Booking
 Room services
-Guest check-in check-out
+guest count
+room information
+room facilities
+
 
 
