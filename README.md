@@ -31,7 +31,7 @@ $ + 1- Reach to the folder cmd
 $ + 2- venv/scripts/activate 
 $ + 3- pip install -r requirements.txt 
 $ + 4- set flask_app=app.py
-$ + 5- flask run
+$  flask run
 
 ```
 
