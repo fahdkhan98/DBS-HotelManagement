@@ -1,0 +1,194 @@
+{%extends "layout.html" %}
+{% block title %}Room Service{% endblock %}
+{% block content %} 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function myfunc()
+    {
+        var guest_id = $("#guest_id").val();
+        $.post(
+            '/verifyguestid',
+            'guestid='+guest_id,
+            function(response)
+            {
+                $("#guest_name").val(response.name);
+                $("#guestdiv").show();
+            }
+        );
+    }
+    function generatebill()
+    {
+        var starter_txt = $("#starter").find("option:selected").text();
+        var starter_price = $("#starter").val();
+        var bread_txt = $("#bread").find("option:selected").text();
+        var bread_price = $("#bread").val();
+        var main_dish_txt = $("#main_dish").find("option:selected").text();
+        var main_dish_price = $("#main_dish").val();
+        var italian_txt = $("#italian").find("option:selected").text();
+        var italian_price = $("#italian").val();
+        var chinese_txt = $("#chinese").find("option:selected").text();
+        var chinese_price = $("#chinese").val();
+        var icecream_txt = $("#icecream").find("option:selected").text();
+        var icecream_price = $("#icecream").val();
+
+        if(starter_txt == "Select Starter")
+        {
+            starter_txt = "";
+            starter_price = 0;
+        }
+        if(bread_txt == "Select Bread")
+        {
+            bread_txt = "";
+            bread_price = 0;
+        }
+        if(main_dish_txt == "Select Main Dish")
+        {
+            main_dish_txt = "";
+            main_dish_price = 0;
+        }
+        if(italian_txt == "Select Italian")
+        {
+            italian_txt = "";
+            italian_price = 0;
+        }
+        if(chinese_txt == "Select Chinese")
+        {
+            chinese_txt = "";
+            chinese_price = 0;
+        }
+        if(icecream_txt == "Select Ice Cream")
+        {
+            icecream_txt = "";
+            icecream_price = 0;
+        }
+        
+        $("#bill_starter").html(starter_txt + " - " + '&#128;' + starter_price);
+        $("#bill_bread").html(bread_txt + " - " +'&#128;'+bread_price);
+        $("#bill_main_dish").html(main_dish_txt + " - " +'&#128;'+main_dish_price);
+        $("#bill_italian").html(italian_txt + " - " +'&#128;'+italian_price);
+        $("#bill_chinese").html(chinese_txt + " - " +'&#128;'+chinese_price);
+        $("#bill_icecream").html(icecream_txt + " - " +'&#128;'+icecream_price);
+        var total_price = parseInt(starter_price) + parseInt(bread_price) + parseInt(main_dish_price) + parseInt(italian_price) + parseInt(chinese_price) + parseInt(icecream_price);
+        $("#bill_total").html('&#128;'+total_price);
+        $("#bill_table").show();
+        
+    }
+</script>
+<div class="container">
+    <h2 class="text-center page-head">Room Service</h2>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form class="book-form">
+                <div class="form-group">
+                    <label>Enter Guest Id:</label>
+                    <div class="row">
+                        <div class="col-md-11"><input type="text" class="form-control" name="guest_id" id="guest_id" placeholder="Enter Guest Id"></div>
+                        <div class="col-md-1"><a class="btn btn-primary" type="button" onclick="myfunc()"><i class="fa-solid fa-user"></i></a></div>
+                    </div>
+                </div><br>
+                <div class="form-group" style="display:none;" id="guestdiv">
+                    <label>Guest Name:</label>
+                    <input type="text" class="form-control" id="guest_name" readonly>
+                </div><br>
+                <div class="form-group">
+                    <label>Starter</label>
+                    <select class="form-control" name="starter" id="starter">
+                        <option>Select Starter</option>
+                        <option value="20">Egyptian Hawawshi</option>
+                        <option value="25">Kolokithokeftedes</option>
+                        <option value="25">Spinach Fatayer</option>
+                        <option value="30">Bifana</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label>Bread</label>
+                    <select class="form-control" name="bread" id="bread">
+                        <option>Select Bread</option>
+                        <option value="110">Challah</option>
+                        <option value="110">Injera</option>
+                        <option value="110">Brioche</option>
+                        <option value="110">Ciabatta</option>
+                        <option value="110">Baguette</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label>Main Dish</label>
+                    <select class="form-control" name="main_dish" id="main_dish">
+                        <option>Main Dish</option>
+                        <option value="110">Rice and beans</option>
+                        <option value="110">Bowl of pho </option>
+                        <option value="120">Dim sum</option>
+                        <option value="120">Dish filled with Spätzle</option>
+                        <option value="140">Goulash</option>
+                        <option value="140">Pizza </option>
+                        <option value="160">Deep Dish Pizza</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label>Italian</label>
+                    <select class="form-control" name="italian" id="italian">
+                        <option>Select Italian</option>
+                        <option value="15">Pizza</option>
+                        <option value="15">Pasta</option>
+                        <option value="20">Focaccia</option>
+                        <option value="20">Lasagna</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label>Chinese</label>
+                    <select class="form-control" id="chinese">
+                        <option>Select Chinese</option>
+                        <option value="90">Beijing Roasted Duck</option>
+                        <option value="90">Ma Po Tofu</option>
+                        <option value="110">Cantonese Char Siu</option>
+                        <option value="90">Dumplings</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label>Ice Cream</label>
+                    <select class="form-control" id="icecream">
+                        <option>Select Ice Cream</option>
+                        <option value="60">Butter Pecan</option>
+                        <option value="60">Rocky Road</option>
+                        <option value="60">Chocolate Chip Cookie Dough</option>
+                        <option value="60">Mint Chocolate Chip</option>
+                    </select>
+                </div><br>
+                <button class="btn dash-norm-btn" type="button" onclick="generatebill()">Generate Bill</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <br>
+
+    <table class="table table-bordered" style="display:none;" id="bill_table">
+        <thead>
+          <tr>
+            <th>Starter</th>
+            <th>Bread</th>
+            <th>Main Dish</th>
+            <th>Italian</th>
+            <th>Chinese</th>
+            <th>Ice Cream</th>
+            <th>Total Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="bill_starter"></td>
+            <td id="bill_bread"></td>
+            <td id="bill_main_dish"></td>
+            <td id="bill_italian"></td>
+            <td id="bill_chinese"></td>
+            <td id="bill_icecream"></td>
+            <td id="bill_total"></td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+
+{% endblock %}
