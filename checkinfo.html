@@ -1,0 +1,48 @@
+{%extends "layout.html" %}
+{% block title %}Guest List{% endblock %}
+{% block content %} 
+
+<div class="container mt-3">
+  {% if msg|length %}
+    <div class="alert alert-success alert-dismissible text-center">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>{{msg}}</strong> 
+    </div>
+  {% endif %}
+    <h2 class="text-center page-head">Check Info</h2>    
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form class="book-form" action="{{url_for('check')}}" method="post">
+                <div class="form-group">
+                    <label>Enter your Guest ID</label>
+                    <input type="number" class="form-control" name="guest_id">
+                </div>
+                <button type="submit" class="btn dash-norm-btn">Check</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    {% if display_mode == 1 %}
+        <table class="table table-bordered" style="margin-top:3%;">
+            <thead>
+            <tr>
+                <th>Guest Name</th>
+                <th>Check IN</th>
+                <th>Check Out</th>
+                <th>Number of Rooms</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{guest_data.name}}</td>
+                <td>{{guest_data.check_in}}</td>
+                <td>{{guest_data.check_out}}</td>
+                <td>{{guest_data.number_of_rooms}}</td>
+            </tr>
+            </tbody>
+        </table>
+    {% endif %}
+</div>
+
+{% endblock %}
