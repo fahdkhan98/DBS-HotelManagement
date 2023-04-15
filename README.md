@@ -34,6 +34,7 @@ $  set flask_app=app.py
 $  flask run
 
 ```
+### Step 2: Make Sure that you have a MySQL Server up and running either in your local computer or hosted remotely
 
 # Screenshots
 
