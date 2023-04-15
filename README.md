@@ -26,11 +26,14 @@ This Project requires the following tools:
 
 # Steps to run the Project
 ## Follow these steps to run the project
-+ 1- Reach to the folder cmd 
-+ 2- venv/scripts/activate 
-+ 3- pip install -r requirements.txt 
-+ 4- set flask_app=app.py
-+ 5- flask run
+```
+$ + 1- Reach to the folder cmd 
+$ + 2- venv/scripts/activate 
+$ + 3- pip install -r requirements.txt 
+$ + 4- set flask_app=app.py
+$ + 5- flask run
+
+```
 
 # Screenshots
 
