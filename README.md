@@ -9,25 +9,20 @@ Overall, the hotel management system based on Python and MySQL will automate and
 
 This Project requires the following tools:
 
-Python 3.6 or higher
-MySQL 80
-click = 8.1.3
-colorama = 0.4.6
-Flask = 2.2.3
-Flask-MySQLdb = 1.0.1
-itsdangerous = 2.1.2
-Jinja2 = 3.1.2
-MarkupSafe = 2.1.2
-mysqlclient = 2.1.1
-Werkzeug = 2.2.3
++ Python
++ MySQL
++ Flask = 2.2.3
++ Flask-MySQLdb = 1.0.1
++ Jinja2 = 3.1.2
++ mysqlclient = 2.1.1
 
 # Features
 
 + Room Booking
 + Room services
-+guest count
-+room information
-+room facilities
++ guest count
++ Room information
++ Room facilities
 
 
 
