@@ -1,0 +1,94 @@
+{%extends "layout.html" %}
+{% block title %}Booking{% endblock %}
+{% block content %} 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function calculate()
+    {
+        var number_of_rooms  = $("#number_of_rooms").val();
+        var room_type = $("#room_type").val();
+        if(room_type == 1)
+        {
+            var price = number_of_rooms * 4000;
+        }
+        if(room_type == 2)
+        {
+            var price = number_of_rooms * 8000;
+        }
+        if(room_type == 3)
+        {
+            var price = number_of_rooms * 9500;
+        }
+        if(room_type == 4)
+        {
+            var price = number_of_rooms * 6700;
+        }
+        $("#price").val('€ '+price);
+    }
+</script>
+<div class="container">
+    <h2 class="text-center page-head">Booking</h2><br>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form class="book-form" action="{{url_for('editbook')}}" method="post">
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter Name" value="{{guest_data.name}}" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Mobile Number:</label>
+                    <input type="phone" class="form-control" name="mobile" placeholder="Enter Phone Number" value="{{guest_data.mobile}}" required>
+                </div><br>
+                
+                <div class="form-group">
+                    <label>Check In date:</label>
+                    <input type="date" class="form-control" name="checkin" placeholder="Enter Check In Date" value="{{guest_data.check_in}}" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Check Out date:</label>
+                    <input type="date" class="form-control" name="checkout" placeholder="Enter Check Out Date" value="{{guest_data.check_out}}" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Total Rooms:</label>
+                    <input type="number" class="form-control" name="number_of_rooms" placeholder="Enter Number of Rooms" min="1" max="5" id="number_of_rooms" value="{{guest_data.number_of_rooms}}" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Select Room Type:</label>
+                    <select name="room_type" class="form-control" id="room_type">
+                        <option>Select Room Type</option>
+                        <option value="1" {{get_book_room_type_selected(guest_data.room_type,1)}}>Hollywood Twin Room</option>
+                        <option value="2" {{get_book_room_type_selected(guest_data.room_type,2)}}>Studio</option>
+                        <option value="3" {{get_book_room_type_selected(guest_data.room_type,3)}}>Mini Suite</option>
+                        <option value="4" {{get_book_room_type_selected(guest_data.room_type,4)}}>Villa</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <input type="text" name="price" id="price" class="form-control" placeholder="Calculate price" value="{{guest_data.price}}" readonly>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-primary" onclick="calculate()"><i class="fa-solid fa-calculator"></i></button>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label>Select mode of Payment:</label>
+                    <select class="form-control" name="mode">
+                        <option>Select mode of Payment</option>
+                        <option value="1" {{get_book_mode_selected(guest_data.mode,1)}}>Cash</option>
+                        <option value="2" {{get_book_mode_selected(guest_data.mode,2)}}>Credit Card</option>
+                        <option value="3" {{get_book_mode_selected(guest_data.mode,3)}}>Debit Card</option>
+                        <option value="4" {{get_book_mode_selected(guest_data.mode,4)}}>Net Banking</option>
+                    </select>
+                </div><br>
+                <input type="hidden" name="guest_id" value="{{guest_data.id}}">
+                <button class="btn btn-success dash-norm-btn" type="submit" name="submit" style="margin:auto;display:block;">Update Booking</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+{% endblock %}

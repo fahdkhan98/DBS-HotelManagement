@@ -1,0 +1,58 @@
+{%extends "layout.html" %}
+{% block title %}Guest List{% endblock %}
+{% block content %} 
+
+<div class="container mt-3">
+  {% if msg|length %}
+    <div class="alert alert-success alert-dismissible text-center">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>{{msg}}</strong> 
+    </div>
+  {% endif %}
+    <h2 class="text-center page-head">Guests List</h2>    
+    <table class="table table-bordered guest-table">
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Guest Name</th>
+          <th>Mobile</th>
+          <th>Guest ID</th>
+          <th>Check in Date</th>
+          <th>Check out Date</th>
+          <th>Number of Rooms</th>
+          <th>Room Type</th>
+          <th>Price</th>
+          <th>Checkout Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for guest in guestdata %}
+            <tr>
+              <td>{{loop.index}}</td>
+              <td>{{guest.name}}</td>
+              <td>{{guest.mobile}}</td>
+              <td>{{guest.id}}</td>
+              <td>{{guest.check_in}}</td>
+              <td>{{guest.check_out}}</td>
+              <td>{{guest.number_of_rooms}}</td>
+              <td>{{getroomtype(guest.room_type)}}</td>
+              <td>{{guest.price}}</td>
+              <td>
+                {% if get_guest_check_badge(guest.id) == 1 %}
+                  <span class="badge bg-success">Staying</span>
+                {% else %}
+                  <span class="badge bg-danger">Expired</span>
+                {% endif %}
+              </td>
+              <td>
+                <a href="/editbook?guest_id={{guest.id}}" class="btn btn-primary" title="Edit guest"><i class="fa-solid fa-pencil"></i></a>
+                <a href="/deletebook?guest_id={{guest.id}}" class="btn btn-danger" title="Delete guest"><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</div>
+
+{% endblock %}
