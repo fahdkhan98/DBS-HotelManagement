@@ -19,27 +19,4 @@
     rgba(255, 135, 83, 0.8), 
     rgba(255, 214, 97, 0.8)
   );">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{url_for('dashboard')}}">
-                <img src="/static/images/logo.png" class="dash-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link dash-nav-a active" aria-current="page" href="{{url_for('dashboard')}}">Home</a>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                <a class="nav-link dash-nav-a" href="{{url_for('logout')}}">Signout</a>
-            </span>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid mt-3 main-cont">
-        {%block content %}{% endblock %}
-    </div>
-</body>
-</html>
+        
