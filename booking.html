@@ -27,3 +27,67 @@
         $("#price").val('€ '+price);
     }
 </script>
+<div class="container">
+    <h2 class="text-center page-head">Booking</h2><br>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form class="book-form" action="{{url_for('booking')}}" method="post">
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter Name" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Mobile Number:</label>
+                    <input type="phone" class="form-control" name="mobile" placeholder="Enter Phone Number" required>
+                </div><br>
+                
+                <div class="form-group">
+                    <label>Check In date:</label>
+                    <input type="date" class="form-control" name="checkin" placeholder="Enter Check In Date" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Check Out date:</label>
+                    <input type="date" class="form-control" name="checkout" placeholder="Enter Check Out Date" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Total Rooms:</label>
+                    <input type="number" class="form-control" name="number_of_rooms" placeholder="Enter Number of Rooms" min="1" max="5" id="number_of_rooms" required>
+                </div><br>
+                <div class="form-group">
+                    <label>Select Room Type:</label>
+                    <select name="room_type" class="form-control" id="room_type">
+                        <option>Select Room Type</option>
+                        <option value="1">Hollywood Twin Room</option>
+                        <option value="2">Studio</option>
+                        <option value="3">Mini Suite</option>
+                        <option value="4">Villa</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <input type="text" name="price" id="price" class="form-control" placeholder="Calculate price" readonly>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-primary" onclick="calculate()"><i class="fa-solid fa-calculator"></i></button>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label>Select mode of Payment:</label>
+                    <select class="form-control" name="mode">
+                        <option>Select mode of Payment</option>
+                        <option value="1">Cash</option>
+                        <option value="2">Credit Card</option>
+                        <option value="3">Debit Card</option>
+                        <option value="4" >Net Banking></option>
+                    </select>
+                </div><br>
+                <button class="btn btn-success dash-norm-btn" type="submit" name="submit" style="margin:auto;display:block;background: linear-gradient(to right, rgba(45, 197, 244, 0.8), rgba(87, 81, 219, 0.8), rgba(206, 58, 141, 0.8), rgba(255, 135, 83, 0.8), rgba(255, 214, 97, 0.8) );">Book</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+{% endblock %}
