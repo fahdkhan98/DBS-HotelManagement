@@ -18,4 +18,61 @@
             }
         );
     }
-    
+function generatebill()
+    {
+        var starter_txt = $("#starter").find("option:selected").text();
+        var starter_price = $("#starter").val();
+        var bread_txt = $("#bread").find("option:selected").text();
+        var bread_price = $("#bread").val();
+        var main_dish_txt = $("#main_dish").find("option:selected").text();
+        var main_dish_price = $("#main_dish").val();
+        var italian_txt = $("#italian").find("option:selected").text();
+        var italian_price = $("#italian").val();
+        var chinese_txt = $("#chinese").find("option:selected").text();
+        var chinese_price = $("#chinese").val();
+        var icecream_txt = $("#icecream").find("option:selected").text();
+        var icecream_price = $("#icecream").val();
+
+        if(starter_txt == "Select Starter")
+        {
+            starter_txt = "";
+            starter_price = 0;
+        }
+        if(bread_txt == "Select Bread")
+        {
+            bread_txt = "";
+            bread_price = 0;
+        }
+        if(main_dish_txt == "Select Main Dish")
+        {
+            main_dish_txt = "";
+            main_dish_price = 0;
+        }
+        if(italian_txt == "Select Italian")
+        {
+            italian_txt = "";
+            italian_price = 0;
+        }
+        if(chinese_txt == "Select Chinese")
+        {
+            chinese_txt = "";
+            chinese_price = 0;
+        }
+        if(icecream_txt == "Select Ice Cream")
+        {
+            icecream_txt = "";
+            icecream_price = 0;
+        }
+        
+        $("#bill_starter").html(starter_txt + " - " + '&#128;' + starter_price);
+        $("#bill_bread").html(bread_txt + " - " +'&#128;'+bread_price);
+        $("#bill_main_dish").html(main_dish_txt + " - " +'&#128;'+main_dish_price);
+        $("#bill_italian").html(italian_txt + " - " +'&#128;'+italian_price);
+        $("#bill_chinese").html(chinese_txt + " - " +'&#128;'+chinese_price);
+        $("#bill_icecream").html(icecream_txt + " - " +'&#128;'+icecream_price);
+        var total_price = parseInt(starter_price) + parseInt(bread_price) + parseInt(main_dish_price) + parseInt(italian_price) + parseInt(chinese_price) + parseInt(icecream_price);
+        $("#bill_total").html('&#128;'+total_price);
+        $("#bill_table").show();
+        
+    }
+</script>
