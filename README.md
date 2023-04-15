@@ -5,7 +5,7 @@ The Website application is built using Python for the backend logic and MySQL fo
 The system will provide a user-friendly interface for hotel staff to manage operations efficiently, reduce human errors, and improve guest experience. It will also generate reports and analytics to help hotel management make data-driven decisions for optimizing revenue and expenses.
 Overall, the hotel management system based on Python and MySQL will automate and streamline hotel operations, resulting in improved performance, reduced costs, and enhanced guest satisfaction.
 
-#Requirements
+# Requirements
 
 This Project requires the following tools:
 Python 3.6 or higher
