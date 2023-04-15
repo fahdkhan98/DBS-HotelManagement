@@ -24,6 +24,14 @@ This Project requires the following tools:
 + Room information
 + Room facilities
 
+#Steps to run the Project
+##So these steps to run the project
+1- Reach to the folder cmd 
+2- venv/scripts/activate 
+3- pip install -r requirements.txt 
+4- set flask_app=app.py
+5- flask run
+
 # Screenshots
 
 # Contributions
