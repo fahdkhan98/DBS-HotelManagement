@@ -1,3 +1,5 @@
+`https://github.com/fahdkhan98/DBS-HotelManagement.git'
+
 # DBS-HotelManagement
 # Introduction
 We have designed a Hotel Management system using Python, Flask, HTML, CSS, and Java Script. It is a web-based application that is designed to manage the day-to-day operations of a hotel. This application helps the staff to manage their hotel operations more efficiently by providing them a user-friendly interface to handle tasks such as room information, room reservations, manage customer check-ins record, manage in house food billing and room facilities provided to the guest.
