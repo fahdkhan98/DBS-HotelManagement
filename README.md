@@ -45,7 +45,7 @@ This page allows the admin to enter the details of the guest and choose the room
 ## Guest Count (guestlist.html)
 This page allows the hotel management to view the information of rooms utilised, details of the guests (checked-in & checked-out dates) and their Guest ID.
 
-img
+![image](https://user-images.githubusercontent.com/127228884/232336401-76b83f45-2bee-4cdd-81ac-e8318f578d24.png)
 
 ## Rooms Information (roomsinfo.html)
 This page provides details of the rooms and the facilities provided in the same.
