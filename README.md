@@ -50,7 +50,7 @@ This page allows the hotel management to view the information of rooms utilised,
 ## Rooms Information (roomsinfo.html)
 This page provides details of the rooms and the facilities provided in the same.
 
-img
+![rooms info](https://user-images.githubusercontent.com/127228884/232336457-68e584e0-4de3-432c-a0b3-6c188b8944b6.png)
 
 ## Room Facilities (roomservice.html)
 The functionality of this page is to order/book meals to a guest who calls in to the service desk to place the order. the customer can choose from a wide variety of cusines and order a full course meal.
