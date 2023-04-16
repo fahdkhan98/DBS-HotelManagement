@@ -22,6 +22,10 @@ This Project requires the following tools:
 ### Admin can do the following things: 
 * Admin can login by their login details
 ![login](https://user-images.githubusercontent.com/127228884/232310021-5c8615d9-0530-49cf-8eca-0e9dd67a0b87.jpg)
+## Dashboard Specifications
+* This dahsborad will works when admin get logged in and later process the features according to customers requirements.
+![dashboard](https://user-images.githubusercontent.com/127228884/232312986-f7dcdf4e-d2bd-46f5-8b12-754c76e82f2e.jpg)
+
 + Room Booking
 + Room services
 + guest count
