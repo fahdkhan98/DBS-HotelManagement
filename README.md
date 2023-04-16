@@ -13,6 +13,7 @@ The system will provide a user-friendly interface for hotel staff to manage oper
 In our Hotel Management System, Flask is used to create routes for different pages and functions of the application. For example, Flask can be used to create routes for the login page, reservation page, room availability page, and more. Flask also allows for the creation of dynamic web pages that can be updated in real-time based on user input or database changes.
 
 # Application Requirements to execute the code
++ Visual Studio Code
 + Python
 + MySQL
 + Flask = V 2.2.3
@@ -52,18 +53,14 @@ This page provides details of the rooms and the facilities provided in the same.
 
 ![rooms info](https://user-images.githubusercontent.com/127228884/232336457-68e584e0-4de3-432c-a0b3-6c188b8944b6.png)
 
-## Room Facilities (roomservice.html)
-The functionality of this page is to order/book meals to a guest who calls in to the service desk to place the order. the customer can choose from a wide variety of cusines and order a full course meal.
-
-img
-
-
-
-# Steps to run the Project
-## Follow these steps to run the project
+# Steps to run the above code
+## Execute the below steps in Visual Studio Code Terminal
+### Extract the contents of the .zip file into a folder
 ```
-$  Reach to the folder cmd 
-$  venv/scripts/activate 
+$ Navigate to the folder where the files are present using the cd function 
+$ cd
+$ Activate Flask -  python -m venv venv 
+$ venv/scripts/activate 
 $  pip install -r requirements.txt 
 $  set flask_app=app.py
 $  flask run
