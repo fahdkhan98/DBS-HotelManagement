@@ -23,7 +23,8 @@ In our Hotel Management System, Flask is used to create routes for different pag
 
 # Features
 ## Login Page (index.html)
-This page is used by Admin to login and authenticate themselves to create a booking and make the changes
+### This login page is used by Admins only to authenticate themselves to create a new booking and make changes to the existing bookings.
+
 ![image](https://user-images.githubusercontent.com/127228884/232329917-a001183c-5378-46c8-9cef-0c6b853b1b46.png)
 
 
