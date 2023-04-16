@@ -40,7 +40,7 @@ The dashboard page is accessible only by the admin post authenticating themselve
 ## Create Booking (booking.html)
 This page allows the admin to enter the details of the guest and choose the room required as per the customers need.
 
-img
+![Booking](https://user-images.githubusercontent.com/127228884/232335128-7ad4715e-2ea8-4805-8dd1-d6a97fb3a1ef.png)
 
 ## Guest Count (guestlist.html)
 This page allows the hotel management to view the information of rooms utilised, details of the guests (checked-in & checked-out dates) and their Guest ID.
