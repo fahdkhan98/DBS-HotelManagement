@@ -60,12 +60,14 @@ This page provides details of the rooms and the facilities provided in the same.
 ```
 $ cd C:\folderpath
 ```
-$ Activate Flask -  python -m venv venv 
+## Install and Activate Flask by typing the below commands in the Visual Studio Code Terminal
+```
+$ pip install flask
+$ python -m venv venv 
 $ venv/scripts/activate 
-$  pip install -r requirements.txt 
-$  set flask_app=app.py
-$  flask run
-
+$ pip install -r requirements.txt 
+$ set flask_app=app.py
+$ flask run
 ```
 ### Step 2: Make Sure that you have a MySQL Server up and running either in your local computer or hosted remotely
 By default, a flask application runs on port `5000` on `localhost`. So head over to http://localhost:5000 and start using!
