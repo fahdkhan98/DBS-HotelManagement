@@ -1,12 +1,17 @@
 # DBS-HotelManagement
 # Introduction
+We have designed a Hotel Management system using Python, Flask, HTML, CSS, and Java Script. It is a web-based application that is designed to manage the day-to-day operations of a hotel. This application helps the staff to manage their hotel operations more efficiently by providing them a user-friendly interface to handle tasks such as room information, room reservations, manage customer check-ins record, manage in house food billing and room facilities provided to the guest.
 
-The Website application is built using Python for the backend logic and MySQL for the database management and the frontend is html css. Python libraries such as Flask and jinjar,used to develop the system. MySQL will be used for creating and managing the database for storing hotel-related data such as  admin login deatil ,room details, guest information, billing transactions, room services.
+The system will provide a user-friendly interface for hotel staff to manage operations efficiently, reduce human errors, and improve guest experience. It will also generate reports and analytics to help hotel management make data-driven decisions for optimizing revenue and expenses.
+
+# Technologies Implemented
++ Python : Python is a powerful programming language that is widely used for web development. Flask is a popular web framework in Python that simplifies web application development. HTML, CSS, and JS are the standard web technologies used to create the user interface of a web application.
+
+We have developed a Hotel check-in management website which allows the hotel management add room availability, check-in the walk-in customer and assign  to check-in a walkin customer into a hotel depending on the availability of rooms  The Website application is built using Python for the backend logic and MySQL for the database management and the frontend is html css. Python libraries such as Flask and jinjar,used to develop the system. MySQL will be used for creating and managing the database for storing hotel-related data such as  admin login deatil ,room details, guest information, billing transactions, room services.
 The system will provide a user-friendly interface for hotel staff to manage operations efficiently, reduce human errors, and improve guest experience. It will also generate reports and analytics to help hotel management make data-driven decisions for optimizing revenue and expenses.
 Overall, the hotel management system based on Python and MySQL will automate and streamline hotel operations, resulting in improved performance, reduced costs, and enhanced guest satisfaction.
 
 # Requirements
-
 This Project requires the following tools:
 
 + Python
