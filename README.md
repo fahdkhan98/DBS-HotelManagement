@@ -32,8 +32,12 @@ This page is used to view the details of the customer without logging in as admi
 
 img
 
-## Check Info (checkinfo.html)
-This page is used to view the details of the customer without logging in as admins only by entering the guest ID which will be generated for each checked-in customer.
+## Dashboard (dashboard.html)
+The dashboard page is accessible only by the admin post authenticating themselves from the login page. the Dashboard page consists options to reserve a room for a new customer, view the list checked-in guests, view the room details & facilities provided and order choose and order food for room service.
+
+img
+
+
 
 
 
