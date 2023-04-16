@@ -11,6 +11,7 @@ The system will provide a user-friendly interface for hotel staff to manage oper
 + Java Script : Java Script (JavaScript) is a high-level programming language used to create interactive and dynamic effects on web pages. It is commonly used to create client-side scripts that run on the user's web browser, such as form validation, animations, and more.
 + Flask : Flask is a micro web framework written in Python. It is used to build web applications quickly and easily, and provides tools and libraries for handling web requests, session management, database integration, and more. Flask is lightweight and easy to learn, making it a popular choice for building web applications.
 In our Hotel Management System, Flask is used to create routes for different pages and functions of the application. For example, Flask can be used to create routes for the login page, reservation page, room availability page, and more. Flask also allows for the creation of dynamic web pages that can be updated in real-time based on user input or database changes.
++ Jinga : Jinja is often used in web development frameworks like Flask and Django to generate HTML pages dynamically based on data from a database or user input. It is also used for generating email templates, reports, and other types of dynamic content.
 
 # Application Requirements to execute the code
 + Visual Studio Code
