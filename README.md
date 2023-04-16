@@ -52,6 +52,11 @@ This page provides details of the rooms and the facilities provided in the same.
 
 img
 
+## Room Facilities (roomservice.html)
+The functionality of this page is to order/book meals to a guest who calls in to the service desk to place the order. the customer can choose from a wide variety of cusines and order a full course meal.
+
+img
+
 
 
 
