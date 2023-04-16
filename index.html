@@ -52,20 +52,20 @@
                     <p class="text-center">{{msg}}</p>
                     </div>
                 {% endif %}
-				<a style="color:white;padding: 1%;border-radius: 15px;" href="{{url_for('check')}}"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+				<a style="color: black;padding: 2%;border-radius: 15px;" href="{{url_for('check')}}"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 				<form class="login100-form validate-form" action="{{url_for('index')}}" method="post">
-					<span class="login100-form-title p-b-70" style="font-size:24px;">
-						Welcome to Pearl continental Hotel
+					<span class="login100-form-title p-b-70" style="font-size:40px;">
+						<b>Welcome to Pearl continental Hotel</b>
 					</span>
 					
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username" style="margin-top:0px;">
-						<input class="input100" type="email" name="email">
+						<input class="input100" type="email" name="email" style="color:white;">
 						<span class="focus-input100" data-placeholder="Email"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
-						<input class="input100" type="password" name="pass">
+						<input class="input100" type="password" name="pass" style="color:white">
 						<span class="focus-input100" data-placeholder="Password"></span>
 					</div>
 
