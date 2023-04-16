@@ -27,7 +27,7 @@ This Project requires the following tools:
 ![dashboard](https://user-images.githubusercontent.com/127228884/232312986-f7dcdf4e-d2bd-46f5-8b12-754c76e82f2e.jpg)
 
 ## Room Booking
-In this section hotel staff takes the detalis of the customer and select the room on customer permission and process the booking
+* In this section hotel staff takes the detalis of the customer and select the room on customer permission and process the booking
 ![logobook](https://user-images.githubusercontent.com/127228884/232313500-69d77bca-8a60-4dea-a628-3e341493ac0e.jpg)
 ![book](https://user-images.githubusercontent.com/127228884/232313532-8b215ae7-21af-410d-9464-4db7de95d4ea.jpg)
 
