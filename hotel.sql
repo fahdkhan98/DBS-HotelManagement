@@ -38,7 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `password`) VALUES
-(1, 'admin@gmail.com', '123456');
+(1, 'admin@dbs.com', 'admin');
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,7 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`id`, `name`, `mobile`, `check_in`, `check_out`, `number_of_rooms`, `room_type`, `price`, `mode`) VALUES
-(10, 'Sanjay', '9389375907', '2023-04-13', '2023-04-15', '2', '1', '€ 8000', '1');
+(10, 'Fahd', '0899701702', '2023-04-13', '2023-04-15', '2', '1', '€ 8000', '1');
 
 --
 -- Indexes for dumped tables
