@@ -35,7 +35,7 @@ This page is used to view the details of the customer without logging in as admi
 ## Dashboard (dashboard.html)
 The dashboard page is accessible only by the admin post authenticating themselves from the login page. the Dashboard page consists options to reserve a room for a new customer, view the list checked-in guests, view the room details & facilities provided and order choose and order food for room service.
 
-img
+![dashboard](https://user-images.githubusercontent.com/127228884/232335082-5c9c77f9-5fcf-4f89-8804-390f80b700d4.png)
 
 ## Create Booking (booking.html)
 This page allows the admin to enter the details of the guest and choose the room required as per the customers need.
