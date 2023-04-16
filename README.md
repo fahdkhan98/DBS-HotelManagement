@@ -75,6 +75,6 @@ By default, a flask application runs on port `5000` on `localhost`. So head over
 ```
 
 # Contributions
-+ Aneela Hameed (10625393) (https://github.com/Aneela106)
++ Aneela Hameed (10625393) (https://github.com/Aneela106) `(layout.html | checkinfo.html | index.html)`
 + Fahd Mansoor Khan (10637537) (https://github.com/fahdkhan98)
 + Archana Devaraj Gowda (10625916) (https://github.com/paapu12)
