@@ -55,10 +55,11 @@ This page provides details of the rooms and the facilities provided in the same.
 
 # Steps to run the above code
 ## Execute the below steps in Visual Studio Code Terminal
-### Extract the contents of the .zip file into a folder
++ Extract the contents of the .zip file into a folder
++ Navigate to the folder where the files exatracted from .zip are present using the cd function  
 ```
-$ Navigate to the folder where the files are present using the cd function 
-$ cd
+$ cd C:\folderpath
+```
 $ Activate Flask -  python -m venv venv 
 $ venv/scripts/activate 
 $  pip install -r requirements.txt 
