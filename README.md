@@ -27,8 +27,13 @@ This login page is used by Admins only to authenticate themselves to create a ne
 
 ![image](https://user-images.githubusercontent.com/127228884/232329917-a001183c-5378-46c8-9cef-0c6b853b1b46.png)
 
-## Login Page (index.html)
-This login page is used by Admins only to authenticate themselves to create a new booking and make changes to the existing bookings.
+## Check Info (checkinfo.html)
+This page is used to view the details of the customer without logging in as admins only by entering the guest ID which will be generated for each checked-in customer. 
+
+img
+
+## Check Info (checkinfo.html)
+This page is used to view the details of the customer without logging in as admins only by entering the guest ID which will be generated for each checked-in customer.
 
 
 
