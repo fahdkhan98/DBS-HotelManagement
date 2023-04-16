@@ -69,9 +69,10 @@ $ pip install -r requirements.txt
 $ set flask_app=app.py
 $ flask run
 ```
-### Step 2: Make Sure that you have a MySQL Server up and running either in your local computer or hosted remotely
+## In Xampp Control Panel verify that the services `Apache` and `MySQL` that you have a MySQL Server up and running without errors 
+```
 By default, a flask application runs on port `5000` on `localhost`. So head over to http://localhost:5000 and start using!
-
+```
 
 # Contributions
 + Aneela Hameed (10625393) (https://github.com/Aneela106)
