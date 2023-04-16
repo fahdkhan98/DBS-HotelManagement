@@ -17,6 +17,10 @@ This Project requires the following tools:
 + mysqlclient = 2.1.1
 
 # Features
+## Admin Specification
+
+### Admin can do the following things: 
+* Admin can login by their login details
 
 + Room Booking
 + Room services
