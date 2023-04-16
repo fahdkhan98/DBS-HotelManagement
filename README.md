@@ -22,7 +22,7 @@ In our Hotel Management System, Flask is used to create routes for different pag
 + Xampp = V 3.3.0
 
 # Features
-## Login Page 
+## Login Page (index.html)
 This page is used by Admin to login and authenticate themselves to create a booking and make the changes
 
 
